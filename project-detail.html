@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project Details | I M AYU</title>
+    <style>
+        body { background-color: #050505; }
+        .bg-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(239, 68, 68, 0.08) 0, transparent 40%),
+                              radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.08) 0, transparent 40%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body class="text-white font-sans bg-mesh min-h-screen">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto border-b border-white/5">
+        <a href="index.html" class="text-3xl font-black italic tracking-tighter">
+            I M <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">AYU</span>
+        </a>
+        <a href="portfolio.html" class="text-sm text-gray-400 hover:text-white transition flex items-center gap-2">
+            <span>←</span> Back to Portfolio
+        </a>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6 py-16">
+        
+        <div class="mb-16">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-8">
+                <div>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4">FinTech <span class="text-blue-500 text-glow-blue">Dashboard</span></h1>
+                    <p class="text-xl text-gray-400 max-w-2xl">Ek automated financial ecosystem jo real-time analytics aur secure transactions ko handle karta hai.</p>
+                </div>
+                <div class="flex gap-3">
+                    <span class="tech-tag italic border-blue-500/30 text-blue-400">#FinTech</span>
+                    <span class="tech-tag italic border-purple-500/30 text-purple-400">#AI</span>
+                </div>
+            </div>
+
+            <div class="w-full glass-panel rounded-[2.5rem] overflow-hidden p-4">
+                <div class="bg-gray-900 rounded-[1.8rem] aspect-video flex items-center justify-center overflow-hidden">
+                    <img src="https://via.placeholder.com/1200x675" alt="Project Full View" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-12">
+            
+            <div class="md:col-span-2 space-y-10">
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-[1px] bg-red-500"></span> The Challenge
+                    </h2>
+                    <p class="text-gray-400 leading-relaxed text-lg">
+                        Client ko ek aisa platform chahiye tha jo hazaron transactions ko per second process kare bina kisi delay ke. Humne ismein distributed system aur ultra-low latency architecture ka use kiya hai.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-8 h-[1px] bg-blue-500"></span> Solution & Results
+                    </h2>
+                    <p class="text-gray-400 leading-relaxed text-lg">
+                        Humne backend ke liye Node.js aur Real-time data sync ke liye Firebase ka use kiya. Result ye raha ki transaction speed 40% badh gayi aur server cost 20% kam ho gayi.
+                    </p>
+                </section>
+            </div>
+
+            <div class="space-y-8">
+                <div class="glass-panel p-8 rounded-3xl">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-6">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">AWS Cloud</span>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl border-red-500/10">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Client</h3>
+                    <p class="font-bold text-lg mb-6">Global FinCorp Solutions</p>
+                    
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Timeline</h3>
+                    <p class="font-bold text-lg">3 Months (Oct - Dec 2025)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-20 border-t border-white/5 text-center">
+        <p class="text-gray-500 mb-6 font-mono tracking-tighter italic">Interested in similar results?</p>
+        <a href="contact.html">
+            <button class="bg-white text-black px-12 py-4 rounded-xl font-black hover:bg-gray-200 transition">
+                LET'S TALK
+            </button>
+        </a>
+    </footer>
+
+</body>
+</html>
